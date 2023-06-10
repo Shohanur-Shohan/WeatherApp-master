@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/cityFinder"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="#F8A01A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Choose Another City"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityFinder"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:id="@+id/weatherIcon"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/weather" />
+
+
+            <TextView
+                android:id="@+id/temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0°C"
+                android:textColor="#F8A01A"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textSize="50sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/weatherCondition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-------------"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/cityName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fetching..."
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
